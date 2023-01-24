@@ -27,7 +27,7 @@ The following image shows the web application's appearance and functionality:
 
 #Deployed Link
 
-The URL of the deployed application. - 
+The URL of the deployed application. - https://hinalpatel8988.github.io/Weather-Dashboard/
 
 The URL of the GitHub repository, with a unique name and a README that describes the project - https://github.com/Hinalpatel8988/Weather-Dashboard.git
 
