@@ -28,7 +28,7 @@
             <h5>Search for a city:</h5>
             <form>
                 <div class="form-group input-group">
-                    <input type="text" class="form-control" id="search-city" placeholder="Enter city here">
+                    <input type="text" class="form-control" id="searchcity" placeholder="Enter city here">
                 </div>
             </form>
             <div class="card">
@@ -40,14 +40,15 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="city-info border rounded my-3 px-3 py-3">
-                            <h2 class="city" id="current-city"> <small class="text-muted" class="currentdate"></small>Weather in Melbourne</h2>
+                            <h2 class="city" id="current-city"> <small class="text-muted" class="currentdate"></small>Weather in Melbourne</h2><p>
+                                <script> document.write(new Date().toLocaleDateString()); </script>
+                                </p>
 
                             <p class="temp">Temp: 51℃<span id="current-temp"></span></p>
                             <img src="" alt="" class="icon" />
                             <p class="discription">Cloudy<span id="current-discription"></span></p>
                             <p class="wind">Wind: 6.2 km/h <span id="current-wind"></span></p>
                             <p class="humidity">Humidity: 60% <span id="current-humidity"></span></p>
-                            <!-- <p class="mb-0">UV Index: <span id="uv-index"></span></p> -->
                         </div>
                     </div>
                 </div>
@@ -66,11 +67,12 @@
                                         <div class="card-header">
                                             <h5 id="day-0"></h5>
                                         </div>
-                                        <div class="card-body">
+                                        <div class="card-body" id="day1" class="day1">
+                                            <h4 class = "fTime" id="fTime"></h4>
                                             <img class ="icon">
-                                            <p> Temp: <class="card-text" id="temp"></p>
-                                            <p> Wind: <class="card-text" id="wind"></p>
-                                            <p> Humidity: <class="card-text" id="Humidity"></p>
+                                            <p> Temp: <class="card-text" class="ftemp"></p>
+                                            <p> Wind: <class="card-text" class="fwind"></p>
+                                            <p> Humidity: <class="card-text" class="fHumidity"></p>
 
                                         </div>
                                     </div>
@@ -80,11 +82,12 @@
                                         <div class="card-header">
                                             <h5 id="day-1"></h5>
                                         </div>
-                                        <div class="card-body">
+                                        <div class="card-body"id="day2" class="day2">
+                                            <h4 class = "fTime"id="fTime"></h4>
                                             <img class ="icon">
-                                            <p> Temp: <class="card-text" id="temp"></p>
-                                            <p> Wind: <class="card-text" id="wind"></p>
-                                            <p> Humidity: <class="card-text" id="Humidity"></p>
+                                            <p> Temp: <class="card-text" class="ftemp"></p>
+                                            <p> Wind: <class="card-text" class="fwind"></p>
+                                            <p> Humidity: <class="card-text" class="fHumidity"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -93,11 +96,12 @@
                                         <div class="card-header">
                                             <h5 id="day-2"></h5>
                                         </div>
-                                        <div class="card-body">
+                                        <div class="card-body"id="day3" class="day3">
+                                            <h4 class = "fTime"id="fTime"></h4>
                                             <img class ="icon">
-                                            <p> Temp: <class="card-text" id="temp"></p>
-                                            <p> Wind: <class="card-text" id="wind"></p>
-                                            <p> Humidity: <class="card-text" id="Humidity"></p>
+                                            <p> Temp: <class="card-text" class="ftemp"></p>
+                                            <p> Wind: <class="card-text" class="fwind"></p>
+                                            <p> Humidity: <class="card-text" class="fHumidity"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -106,11 +110,12 @@
                                         <div class="card-header">
                                             <h5 id="day-3"></h5>
                                         </div>
-                                        <div class="card-body">
+                                        <div class="card-body"id="day4" class="day4">
+                                            <h4 class = "fTime"id="fTime"></h4>
                                             <img class ="icon">
-                                            <p> Temp: <class="card-text" id="temp"></p>
-                                            <p> Wind: <class="card-text" id="wind"></p>
-                                            <p> Humidity: <class="card-text" id="Humidity"></p>
+                                            <p> Temp: <class="card-text" class="ftemp"></p>
+                                            <p> Wind: <class="card-text" class="fwind"></p>
+                                            <p> Humidity: <class="card-text" class="fHumidity"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -119,11 +124,12 @@
                                         <div class="card-header">
                                             <h5 id="day-4"></h5>
                                         </div>
-                                        <div class="card-body">
+                                        <div class="card-body"id="day5" class="day5">
+                                            <h4 class = "fTime"id="fTime"></h4>
                                             <img class ="icon">
-                                            <p> Temp: <class="card-text" id="temp"></p>
-                                            <p> Wind: <class="card-text" id="wind"></p>
-                                            <p> Humidity: <class="card-text" id="Humidity"></p>
+                                            <p> Temp: <class="card-text" class="ftemp"></p>
+                                            <p> Wind: <class="card-text" class="fwind"></p>
+                                            <p> Humidity: <class="card-text" class="fHumidity"></p>
                                         </div>
                                     </div>
                                 </div>

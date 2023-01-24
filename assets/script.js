@@ -7,7 +7,8 @@ let  weathercontent = {
         + this.apiKey + "&units=metric"
     )
     .then((response) => response.json())
-    .then((data) => this.displayWeather(data));
+    .then((data) => this.displayWeather(data))
+
 },
 
 displayWeather: function(data) {
@@ -30,10 +31,33 @@ search: function() {
 
 document.querySelector(".searchbtn").addEventListener("click" , function () {
     weathercontent.search();
+    getFiveDayWeather(data);
 });
 
-document.querySelector(".form-control").removeEventListener("keyup", function (event) {
-if (event.key == "Enter") {
-    weathercontent.search();
-} 
-})
+function getFiveDayWeather(data) {
+
+    var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&exclude=current,minutely,hourly,alerts&appid=" + apiKey;
+
+    fetch(apiUrl)
+    .then(function (response) {
+        if (response.ok) {
+            response.json().then(function (data) {
+                displayFutureConditions(data);
+            });
+        } else {
+            alert("Error " + response.statusText);
+        }
+    })
+    .catch(function (error) {
+        alert("Unable to connect to OpenWeather");
+    });
+
+};
+
+
+
+
+
+
+
+
