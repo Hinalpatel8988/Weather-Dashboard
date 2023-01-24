@@ -1,3 +1,4 @@
+//API Key - 095b3ce391c405a62c28d9bfa698fcc
 let  weathercontent = {
     apiKey : "5095b3ce391c405a62c28d9bfa698fcc",
     fetchWeather: function (city) {
