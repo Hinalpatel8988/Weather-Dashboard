@@ -14,7 +14,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="card">
@@ -33,20 +33,21 @@
             </form>
             <div class="card">
                 <ul class="list-group list-group-flush" id="search-list"></ul>
-                <button id="search-btn" class="btn btn-sm btn-primary fa fa-search">Search City</button>
+                <button class = "searchbtn" id="search-btn" class="btn btn-sm btn-primary fa fa-search">Search City</button>
             </div>
         </div>
-
-            <div id="weather-content" class="col-12 col-md-9">
+            <div class= "weathercontent" id="weather-content" class="col-12 col-md-9">
                 <div class="row">
                     <div class="col-12">
                         <div class="city-info border rounded my-3 px-3 py-3">
-                            <h2 id="current-city"> <small class="text-muted" id="current-date"></small></h2>
+                            <h2 class="city" id="current-city"> <small class="text-muted" class="currentdate"></small>Weather in Melbourne</h2>
 
-                            <p class="mb-0">Temp: <span id="current-temp"></span></p>
-                            <p class="mb-0">Wind: <span id="current-wind"></span></p>
-                            <p class="mb-0">Humidity: <span id="current-humidity"></span></p>
-                            <p class="mb-0">UV Index: <span id="uv-index"></span></p>
+                            <p class="temp">Temp: 51℃<span id="current-temp"></span></p>
+                            <img src="" alt="" class="icon" />
+                            <p class="discription">Cloudy<span id="current-discription"></span></p>
+                            <p class="wind">Wind: 6.2 km/h <span id="current-wind"></span></p>
+                            <p class="humidity">Humidity: 60% <span id="current-humidity"></span></p>
+                            <!-- <p class="mb-0">UV Index: <span id="uv-index"></span></p> -->
                         </div>
                     </div>
                 </div>
@@ -127,6 +128,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            
+<script src="script.js"></script>
 </body>
 </html>
